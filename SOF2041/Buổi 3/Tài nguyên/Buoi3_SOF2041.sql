@@ -1,19 +1,19 @@
-CREATE DATABASE BUOI3_SOF2041
+﻿CREATE DATABASE BUOI3_SOF2041
 GO
 USE BUOI3_SOF2041
 GO
 CREATE TABLE SinhVien(
 	Ma NVARCHAR(10) PRIMARY KEY,
 	Ten NVARCHAR(200) NOT NULL,
-	GioiTinh INT NOT NULL, -- V?i 0 l� Nam v� 1 l� N?
+	GioiTinh INT NOT NULL, -- Với 0 là Nam và 1 là Nữ
 	SoDienThoai NVARCHAR(20) NOT NULL
 )
 GO
 INSERT INTO SinhVien (Ma, Ten, GioiTinh, SoDienThoai)
-VALUES  ('PH39309', N'V? Tu?n Ki?t', 0, '0989999999'),
-		('PH12345', N'Ph�ng Thanh ??', 0, '0123456789'),
-		('PH56789', N'Ph�ng Khoa H?c', 1, '0543216789'),
-		('PH54321', N'Tr?n Th�i Linh', 0, '0987612345'),
-		('PH98765', N'Th?y Onip', 1, '0876123959')
+VALUES  ('PH39309', N'Vũ Tuấn Kiệt', 0, '0989999999'),
+		('PH12345', N'Phùng Thanh Độ', 0, '0123456789'),
+		('PH56789', N'Phùng Khoa Học', 1, '0543216789'),
+		('PH54321', N'Trần Thái Linh', 0, '0987612345'),
+		('PH98765', N'Thầy Onip', 1, '0876123959')
 GO
 SELECT * FROM SinhVien
