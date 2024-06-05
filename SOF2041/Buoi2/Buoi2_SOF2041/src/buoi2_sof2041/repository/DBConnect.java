@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class DBConnect {
 
     //sửa tên database cần làm trong bài sau "database="
-    public static String URL = "jdbc:sqlserver://localhost:1433;database=BUOI2_SOF2041";
+    public static String URL = "jdbc:sqlserver://localhost:1433;database=BUOI2_SOF2041;encrypt=true;trustServerCertificate=true";
     public static String USERNAME = "sa";
     //hãy sửa phần dữ liệu PASS trùng với pass được set ở tài khoảng sa của bạn.
     public static String PASS = "kakiethy12";
